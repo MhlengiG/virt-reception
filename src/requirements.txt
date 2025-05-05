@@ -1,0 +1,9 @@
+Flask
+mysql-connector-python
+spacy
+rapidfuzz
+scikit-learn
+tensorflow
+nltk
+requests
+jsonify
