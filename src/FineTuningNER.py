@@ -14,7 +14,7 @@ with open("gliner_training.jsonl", "r", encoding="utf-8") as f:
         train_data.append((text, {"entities": entities}))
 
 # Load the model
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_sm")
 
 # Set up the NER pipeline
 if "ner" not in nlp.pipe_names:
