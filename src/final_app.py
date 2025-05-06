@@ -4,6 +4,7 @@ from FeatureExtractorClass import FeatureExtractor
 from QueryDB import DBQuery
 from ChatSession import ChatSession
 from waitress import serve
+import traceback
 
 
 
@@ -39,33 +40,32 @@ def receive_from_subsystem1():
     global last_user_input, last_response, response_ready, response_confirmed
 
     try:
-        data = request.get_json()
-        user_input = data.get("user_input", "")
+        data = request.get_json(force=True)
+        print("RAW JSON:", data)
 
+        user_input = data.get("user_input", "")
         if not user_input:
+            print("No user_input provided.")
             return jsonify({"error": "No user_input provided"}), 400
 
-        # Store raw input from Subsystem 1
         last_user_input = user_input
         response_ready = False
         response_confirmed = False
 
-        # Process input
         response = chatbot.chat(user_input)
-
-        # Store response for Subsystem 4 to fetch
         last_response = response
         response_ready = True
 
-        # Acknowledge to Subsystem 1
         return jsonify({
             "status": "input_received",
             "message": f"Input from Subsystem 1 acknowledged: '{user_input}'"
         })
 
     except Exception as e:
-        print(f"Error in /chat: {e}")
-        return jsonify({"error": "Internal processing error"}), 500
+        import traceback
+        traceback.print_exc()
+        return jsonify({"error": f"Internal error: {e}"}), 500
+
 
 
 @app.route('/get-response', methods=['GET'])
