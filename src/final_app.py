@@ -3,6 +3,9 @@ from Classifier import Classifier
 from FeatureExtractorClass import FeatureExtractor
 from QueryDB import DBQuery
 from ChatSession import ChatSession
+from waitress import serve
+
+
 
 app = Flask(__name__)
 
@@ -28,7 +31,7 @@ response_confirmed = False
 
 @app.route('/', methods=['GET'])
 def health_check():
-    return jsonify({"status": "Chatbot is running"})
+    return jsonify({"status": "Response generator is running"})
 
 
 @app.route('/chat', methods=['POST'])
@@ -97,4 +100,4 @@ def confirm_from_subsystem4():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    serve(app, host="0.0.0.0", port=5000)
