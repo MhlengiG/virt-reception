@@ -25,6 +25,8 @@ class DBQuery:
             database=database
         )
         self.cursor = self.conn.cursor(dictionary=True)
+        self.conn.ping(reconnect=True, attempts=3, delay=2)
+        self.cursor = self.conn.cursor()
 
     def get_current_day(self):
         return datetime.now().strftime("%A")
