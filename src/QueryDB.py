@@ -26,14 +26,14 @@ class DBQuery:
         )
         self.cursor = self.conn.cursor(dictionary=True)
         self.conn.ping(reconnect=True, attempts=3, delay=2)
-        self.cursor = self.conn.cursor()
+        # self.cursor = self.conn.cursor()
 
     def get_current_day(self):
         return datetime.now().strftime("%A")
 
     def fuzzy_match(self, query_value, column, table, min_score=80):
         self.cursor.execute(f"SELECT DISTINCT {column} FROM {table};")
-        options = [row[column] for row in self.cursor.fetchall() if row[column]]
+        options = [row[0] for row in self.cursor.fetchall() if row[0]]
         match, score, _ = process.extractOne(query_value.lower(), options)
         print(f"🔍 Fuzzy Match: '{query_value}' → '{match}' [score: {score}]")
         return match if score >= min_score else None
