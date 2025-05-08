@@ -33,7 +33,7 @@ class DBQuery:
 
     def fuzzy_match(self, query_value, column, table, min_score=80):
         self.cursor.execute(f"SELECT DISTINCT {column} FROM {table};")
-        options = [row[0] for row in self.cursor.fetchall() if row[0]]
+        options = [row[column] for row in self.cursor.fetchall() if row[column]]
         match, score, _ = process.extractOne(query_value.lower(), options)
         print(f"🔍 Fuzzy Match: '{query_value}' → '{match}' [score: {score}]")
         return match if score >= min_score else None
