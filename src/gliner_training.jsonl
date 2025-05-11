@@ -21,6 +21,14 @@
 {"text": "Locate Prof. Johnson's digital communications office.", "entities": [{"start": 7, "end": 21, "label": "person_name"}, {"start": 23, "end": 47, "label": "academic_subject"}, {"start": 48, "end": 53, "label": "room_type"}]}
 {"text": "Is the control systems lab assistant available?", "entities": [{"start": 7, "end": 22, "label": "academic_subject"}, {"start": 24, "end": 36, "label": "person_role"}]}
 {"text": "Find the data communications lecture hall.", "entities": [{"start": 9, "end": 31, "label": "academic_subject"}, {"start": 32, "end": 42, "label": "room_type"}]}
+{"text": "Where is doctor mthethwa's office?", "entities": [{"start": 13, "end": 21, "label": "surname"}]}
+{"text": "Can you tell me where dr mthethwa is?", "entities": [{"start": 27, "end": 35, "label": "surname"}]}
+{"text": "Where can I find mr mthethwa?", "entities": [{"start": 21, "end": 29, "label": "surname"}]}
+{"text": "Where is proffesor mthethwa's office?", "entities": [{"start": 19, "end": 27, "label": "surname"}]}
+{"text": "Do you know where doctor mthethwa is?", "entities": [{"start": 22, "end": 30, "label": "surname"}]}
+{"text": "Tell me where dr mthethwa is.", "entities": [{"start": 15, "end": 23, "label": "surname"}]}
+{"text": "Is mr mthethwa available?", "entities": [{"start": 3, "end": 11, "label": "surname"}]}
+{"text": "Can you find proffesor mthethwa for me?", "entities": [{"start": 17, "end": 25, "label": "surname"}]}
 {"text": "I am looking for the security and encryption workshop.", "entities": [{"start": 21, "end": 46, "label": "academic_subject"}, {"start": 47, "end": 54, "label": "class_type"}]}
 {"text": "Can you direct me to Dr. Lee's control systems seminar?", "entities": [{"start": 25, "end": 32, "label": "person_name"}, {"start": 34, "end": 50, "label": "academic_subject"}, {"start": 51, "end": 55, "label": "class_type"}]}
 {"text": "Show me the digital communications lab assistant.", "entities": [{"start": 12, "end": 36, "label": "academic_subject"}, {"start": 37, "end": 49, "label": "person_role"}]}
@@ -212,6 +220,76 @@
 {"text": "I need information about registration procedures.", "entities": [{"start": 24, "end": 36, "label": "faq_topic"}]}
 {"text": "Is the data structures tutorial tomorrow?", "entities": [{"start": 7, "end": 22, "label": "academic_subject"}, {"start": 23, "end": 31, "label": "class_type"}, {"start": 32, "end": 40, "label": "day"}]}
 {"text": "Where is the Controls Lab located?", "entities": [{"start": 13, "end": 25, "label": "room_type"}]}
+{"text": "Where can I find Doctor Parker?", "entities": [{"start": 19, "end": 25, "label": "surname"}]}
+{"text": "Where is Professor Parker's office?", "entities": [{"start": 13, "end": 19, "label": "surname"}]}
+{"text": "Is Doctor Parker available?", "entities": [{"start": 10, "end": 16, "label": "surname"}]}
+{"text": "Can I speak to Professor Parker?", "entities": [{"start": 22, "end": 28, "label": "surname"}]}
+{"text": "Where is Doctor Parker's lab?", "entities": [{"start": 12, "end": 18, "label": "surname"}]}
+{"text": "Is Professor Parker in today?", "entities": [{"start": 13, "end": 19, "label": "surname"}]}
+{"text": "Where can I find Professor Parker?", "entities": [{"start": 21, "end": 27, "label": "surname"}]}
+{"text": "Can I speak to Doctor Parker now?", "entities": [{"start": 19, "end": 25, "label": "surname"}]}
+{"text": "Is Doctor Parker teaching?", "entities": [{"start": 10, "end": 16, "label": "surname"}]}
+{"text": "Where is Professor Parker's desk?", "entities": [{"start": 13, "end": 19, "label": "surname"}]}
+{"text": "Where can I find Doctor Pillay?", "entities": [{"start": 19, "end": 25, "label": "surname"}]}
+{"text": "Where is Professor Pillay's office?", "entities": [{"start": 13, "end": 19, "label": "surname"}]}
+{"text": "Is Doctor Pillay available?", "entities": [{"start": 10, "end": 16, "label": "surname"}]}
+{"text": "Can I speak to Professor Pillay?", "entities": [{"start": 22, "end": 28, "label": "surname"}]}
+{"text": "Where is Doctor Pillay's lab?", "entities": [{"start": 12, "end": 18, "label": "surname"}]}
+{"text": "Is Professor Pillay in today?", "entities": [{"start": 13, "end": 19, "label": "surname"}]}
+{"text": "Where can I find Professor Pillay?", "entities": [{"start": 21, "end": 27, "label": "surname"}]}
+{"text": "Can I speak to Doctor Pillay now?", "entities": [{"start": 19, "end": 25, "label": "surname"}]}
+{"text": "Is Doctor Pillay teaching?", "entities": [{"start": 10, "end": 16, "label": "surname"}]}
+{"text": "Where is Professor Pillay's desk?", "entities": [{"start": 13, "end": 19, "label": "surname"}]}
+{"text": "Where can I find Doctor Quazi?", "entities": [{"start": 19, "end": 24, "label": "surname"}]}
+{"text": "Where is Professor Quazi's office?", "entities": [{"start": 13, "end": 18, "label": "surname"}]}
+{"text": "Is Doctor Quazi available?", "entities": [{"start": 10, "end": 15, "label": "surname"}]}
+{"text": "Can I speak to Professor Quazi?", "entities": [{"start": 22, "end": 27, "label": "surname"}]}
+{"text": "Where is Doctor Quazi's lab?", "entities": [{"start": 12, "end": 17, "label": "surname"}]}
+{"text": "Is Professor Quazi in today?", "entities": [{"start": 13, "end": 18, "label": "surname"}]}
+{"text": "Where can I find Professor Quazi?", "entities": [{"start": 21, "end": 26, "label": "surname"}]}
+{"text": "Can I speak to Doctor Quazi now?", "entities": [{"start": 19, "end": 24, "label": "surname"}]}
+{"text": "Is Doctor Quazi teaching?", "entities": [{"start": 10, "end": 15, "label": "surname"}]}
+{"text": "Where is Professor Quazi's desk?", "entities": [{"start": 13, "end": 18, "label": "surname"}]}
+{"text": "Where can I find Doctor Xu?", "entities": [{"start": 19, "end": 21, "label": "surname"}]}
+{"text": "Where is Professor Xu's office?", "entities": [{"start": 13, "end": 15, "label": "surname"}]}
+{"text": "Is Doctor Xu available?", "entities": [{"start": 10, "end": 12, "label": "surname"}]}
+{"text": "Can I speak to Professor Xu?", "entities": [{"start": 22, "end": 24, "label": "surname"}]}
+{"text": "Where is Doctor Xu's lab?", "entities": [{"start": 12, "end": 14, "label": "surname"}]}
+{"text": "Is Professor Xu in today?", "entities": [{"start": 13, "end": 15, "label": "surname"}]}
+{"text": "Where can I find Professor Xu?", "entities": [{"start": 21, "end": 23, "label": "surname"}]}
+{"text": "Can I speak to Doctor Xu now", "entities": [{"start": 19, "end": 21, "label": "surname"}]}
+{"text": "Is Doctor Xu teaching?", "entities": [{"start": 10, "end": 12, "label": "surname"}]}
+{"text": "Where is Professor Xu's desk?", "entities": [{"start": 13, "end": 15, "label": "surname"}]}
+{"text": "Where can I find Doctor Walingo?", "entities": [{"start": 19, "end": 26, "label": "surname"}]}
+{"text": "Where is Professor Walingo's office?", "entities": [{"start": 13, "end": 20, "label": "surname"}]}
+{"text": "Is Doctor Walingo available?", "entities": [{"start": 10, "end": 17, "label": "surname"}]}
+{"text": "Can I speak to Professor Walingo?", "entities": [{"start": 22, "end": 29, "label": "surname"}]}
+{"text": "Where is Doctor Walingo's lab?", "entities": [{"start": 12, "end": 19, "label": "surname"}]}
+{"text": "Is Professor Walingo in today?", "entities": [{"start": 13, "end": 20, "label": "surname"}]}
+{"text": "Where can I find Professor Walingo?", "entities": [{"start": 21, "end": 28, "label": "surname"}]}
+{"text": "Can I speak to Doctor Walingo now?", "entities": [{"start": 19, "end": 26, "label": "surname"}]}
+{"text": "Is Doctor Walingo teaching?", "entities": [{"start": 10, "end": 17, "label": "surname"}]}
+{"text": "Where is Professor Walingo's desk?", "entities": [{"start": 13, "end": 20, "label": "surname"}]}
+{"text": "Where can I find Doctor Mthethwa?", "entities": [{"start": 19, "end": 27, "label": "surname"}]}
+{"text": "Where is Professor Mthethwa's office?", "entities": [{"start": 13, "end": 21, "label": "surname"}]}
+{"text": "Is Doctor Mthethwa available?", "entities": [{"start": 10, "end": 18, "label": "surname"}]}
+{"text": "Can I speak to Professor Mthethwa?", "entities": [{"start": 22, "end": 30, "label": "surname"}]}
+{"text": "Where is Doctor Mthethwa's lab?", "entities": [{"start": 12, "end": 20, "label": "surname"}]}
+{"text": "Is Professor Mthethwa in today?", "entities": [{"start": 13, "end": 21, "label": "surname"}]}
+{"text": "Where can I find Professor Mthethwa?", "entities": [{"start": 21, "end": 29, "label": "surname"}]}
+{"text": "Can I speak to Doctor Mthethwa now?", "entities": [{"start": 19, "end": 27, "label": "surname"}]}
+{"text": "Is Doctor Mthethwa teaching?", "entities": [{"start": 10, "end": 18, "label": "surname"}]}
+{"text": "Where is Professor Mthethwa's desk?", "entities": [{"start": 13, "end": 21, "label": "surname"}]}
+{"text": "Where can I find Doctor Patel?", "entities": [{"start": 19, "end": 24, "label": "surname"}]}
+{"text": "Where is Professor Patel's office?", "entities": [{"start": 13, "end": 18, "label": "surname"}]}
+{"text": "Is Doctor Patel available?", "entities": [{"start": 10, "end": 15, "label": "surname"}]}
+{"text": "Can I speak to Professor Patel?", "entities": [{"start": 22, "end": 27, "label": "surname"}]}
+{"text": "Where is Doctor Patel's lab?", "entities": [{"start": 12, "end": 17, "label": "surname"}]}
+{"text": "Is Professor Patel in today?", "entities": [{"start": 13, "end": 18, "label": "surname"}]}
+{"text": "Where can I find Professor Patel?", "entities": [{"start": 21, "end": 26, "label": "surname"}]}
+{"text": "Can I speak to Doctor Patel now?", "entities": [{"start": 19, "end": 24, "label": "surname"}]}
+{"text": "Is Doctor Patel teaching?", "entities": [{"start": 10, "end": 15, "label": "surname"}]}
+{"text": "Where is Professor Patel's desk?", "entities": [{"start": 13, "end": 18, "label": "surname"}]}
 {"text": "How do I find Naidoo's office in 5-06?", "entities": [{"start": 14, "end": 20, "label": "surname"}, {"start": 22, "end": 28, "label": "room_type"}]}
 {"text": "Where is Prof. Pillay's database systems lecture?", "entities": [{"start": 9, "end": 14, "label": "person_role"}, {"start": 16, "end": 22, "label": "surname"}, {"start": 24, "end": 40, "label": "academic_subject"}, {"start": 41, "end": 48, "label": "class_type"}]}
 {"text": "Is there a male toilet near the 4th Year Computer Lab?", "entities": [{"start": 10, "end": 21, "label": "room_type"}, {"start": 31, "end": 53, "label": "room_type"}]}
@@ -1861,6 +1939,62 @@
 {"text": "Do you know where Parker is today?", "entities": [{"start": 18, "end": 24, "label": "surname"}]}
 {"text": "Can I meet with Parker now?", "entities": [{"start": 16, "end": 22, "label": "surname"}]}
 {"text": "Can I meet with Parker now?", "entities": [{"start": 16, "end": 22, "label": "surname"}]}
+{"text": "Where is Professor Mthethwa's office?", "entities": [{"start": 19, "end": 27, "label": "surname"}]}
+{"text": "Can you show me where Doctor Mthethwa is?", "entities": [{"start": 25, "end": 33, "label": "surname"}]}
+{"text": "I need directions to Professor Mthethwa's room.", "entities": [{"start": 24, "end": 32, "label": "surname"}]}
+{"text": "Tell me the location of Doctor Mthethwa.", "entities": [{"start": 26, "end": 34, "label": "surname"}]}
+{"text": "I'm looking for Professor Mthethwa's office.", "entities": [{"start": 21, "end": 29, "label": "surname"}]}
+{"text": "Could you locate Doctor Mthethwa's office?", "entities": [{"start": 23, "end": 31, "label": "surname"}]}
+{"text": "Is Professor Mthethwa in today?", "entities": [{"start": 13, "end": 21, "label": "surname"}]}
+{"text": "Where can I find Doctor Mthethwa?", "entities": [{"start": 25, "end": 33, "label": "surname"}]}
+{"text": "Where is Professor Parker's office?", "entities": [{"start": 19, "end": 25, "label": "surname"}]}
+{"text": "Can you show me where Doctor Parker is?", "entities": [{"start": 25, "end": 31, "label": "surname"}]}
+{"text": "I need directions to Professor Parker's room.", "entities": [{"start": 24, "end": 30, "label": "surname"}]}
+{"text": "Tell me the location of Doctor Parker.", "entities": [{"start": 26, "end": 32, "label": "surname"}]}
+{"text": "I'm looking for Professor Parker's office.", "entities": [{"start": 21, "end": 27, "label": "surname"}]}
+{"text": "Could you locate Doctor Parker's office?", "entities": [{"start": 23, "end": 29, "label": "surname"}]}
+{"text": "Is Professor Parker in today?", "entities": [{"start": 13, "end": 19, "label": "surname"}]}
+{"text": "Where can I find Doctor Parker?", "entities": [{"start": 25, "end": 31, "label": "surname"}]}
+{"text": "Where is Professor Rezenom's office?", "entities": [{"start": 19, "end": 27, "label": "surname"}]}
+{"text": "Can you show me where Doctor Rezenom is?", "entities": [{"start": 25, "end": 33, "label": "surname"}]}
+{"text": "I need directions to Professor Rezenom's room.", "entities": [{"start": 24, "end": 32, "label": "surname"}]}
+{"text": "Tell me the location of Doctor Rezenom.", "entities": [{"start": 26, "end": 34, "label": "surname"}]}
+{"text": "I'm looking for Professor Rezenom's office.", "entities": [{"start": 21, "end": 29, "label": "surname"}]}
+{"text": "Could you locate Doctor Rezenom's office?", "entities": [{"start": 23, "end": 31, "label": "surname"}]}
+{"text": "Is Professor Rezenom in today?", "entities": [{"start": 13, "end": 21, "label": "surname"}]}
+{"text": "Where can I find Doctor Rezenom?", "entities": [{"start": 25, "end": 33, "label": "surname"}]}
+{"text": "Where is Professor Quazi's office?", "entities": [{"start": 19, "end": 24, "label": "surname"}]}
+{"text": "Can you show me where Doctor Quazi is?", "entities": [{"start": 25, "end": 30, "label": "surname"}]}
+{"text": "I need directions to Professor Quazi's room.", "entities": [{"start": 24, "end": 29, "label": "surname"}]}
+{"text": "Tell me the location of Doctor Quazi.", "entities": [{"start": 26, "end": 31, "label": "surname"}]}
+{"text": "I'm looking for Professor Quazi's office.", "entities": [{"start": 21, "end": 26, "label": "surname"}]}
+{"text": "Could you locate Doctor Quazi's office?", "entities": [{"start": 23, "end": 28, "label": "surname"}]}
+{"text": "Is Professor Quazi in today?", "entities": [{"start": 13, "end": 18, "label": "surname"}]}
+{"text": "Where can I find Doctor Quazi?", "entities": [{"start": 25, "end": 30, "label": "surname"}]}
+{"text": "Where is Professor Patel's office?", "entities": [{"start": 19, "end": 24, "label": "surname"}]}
+{"text": "Can you show me where Doctor Patel is?", "entities": [{"start": 25, "end": 30, "label": "surname"}]}
+{"text": "I need directions to Professor Patel's room.", "entities": [{"start": 24, "end": 29, "label": "surname"}]}
+{"text": "Tell me the location of Doctor Patel.", "entities": [{"start": 26, "end": 31, "label": "surname"}]}
+{"text": "I'm looking for Professor Patel's office.", "entities": [{"start": 21, "end": 26, "label": "surname"}]}
+{"text": "Could you locate Doctor Patel's office?", "entities": [{"start": 23, "end": 28, "label": "surname"}]}
+{"text": "Is Professor Patel in today?", "entities": [{"start": 13, "end": 18, "label": "surname"}]}
+{"text": "Where can I find Doctor Patel?", "entities": [{"start": 25, "end": 30, "label": "surname"}]}
+{"text": "Where is Professor Naidoo's office?", "entities": [{"start": 19, "end": 25, "label": "surname"}]}
+{"text": "Can you show me where Doctor Naidoo is?", "entities": [{"start": 25, "end": 31, "label": "surname"}]}
+{"text": "I need directions to Professor Naidoo's room.", "entities": [{"start": 24, "end": 30, "label": "surname"}]}
+{"text": "Tell me the location of Doctor Naidoo.", "entities": [{"start": 26, "end": 32, "label": "surname"}]}
+{"text": "I'm looking for Professor Naidoo's office.", "entities": [{"start": 21, "end": 27, "label": "surname"}]}
+{"text": "Could you locate Doctor Naidoo's office?", "entities": [{"start": 23, "end": 29, "label": "surname"}]}
+{"text": "Is Professor Naidoo in today?", "entities": [{"start": 13, "end": 19, "label": "surname"}]}
+{"text": "Where can I find Doctor Naidoo?", "entities": [{"start": 25, "end": 31, "label": "surname"}]}
+{"text": "Where is Professor Xu's office?", "entities": [{"start": 19, "end": 21, "label": "surname"}]}
+{"text": "Can you show me where Doctor Xu is?", "entities": [{"start": 25, "end": 27, "label": "surname"}]}
+{"text": "I need directions to Professor Xu's room.", "entities": [{"start": 24, "end": 26, "label": "surname"}]}
+{"text": "Tell me the location of Doctor Xu.", "entities": [{"start": 26, "end": 28, "label": "surname"}]}
+{"text": "I'm looking for Professor Xu's office.", "entities": [{"start": 21, "end": 23, "label": "surname"}]}
+{"text": "Could you locate Doctor Xu's office?", "entities": [{"start": 23, "end": 25, "label": "surname"}]}
+{"text": "Is Professor Xu in today?", "entities": [{"start": 13, "end": 15, "label": "surname"}]}
+{"text": "Where can I find Doctor Xu?", "entities": [{"start": 25, "end": 27, "label": "surname"}]}
 {"text": "Is Parker available today?", "entities": [{"start": 3, "end": 9, "label": "surname"}]}
 {"text": "Give me office info for Patel.", "entities": [{"start": 24, "end": 29, "label": "surname"}]}
 {"text": "Find the timetable for Patel.", "entities": [{"start": 23, "end": 28, "label": "surname"}]}
@@ -2438,7 +2572,7 @@
 {"text": "Does Prof. Ntola have a class now?", "entities": [{"start": 11, "end": 16, "label": "surname"}, {"start": 5, "end": 10, "label": "person_role"}]}
 {"text": "Is Ntola free at the moment?", "entities": [{"start": 3, "end": 8, "label": "surname"}]}
 {"text": "Need to ask Prof. Ntola something, where is their office?", "entities": [{"start": 18, "end": 23, "label": "surname"}, {"start": 12, "end": 17, "label": "person_role"}]}
-{"text": "Does Mr. Nxumalo teach maths?", "entities": [{"start": 9, "end": 16, "label": "surname"}, {"start": 5, "end": 8, "label": "person_role"}]}
+{"text": "Does Mr. Xu teach maths?", "entities": [{"start": 9, "end": 16, "label": "surname"}, {"start": 5, "end": 8, "label": "person_role"}]}
 {"text": "Need to ask Prof. Nxumalo something, where is their office?", "entities": [{"start": 18, "end": 25, "label": "surname"}, {"start": 12, "end": 17, "label": "person_role"}]}
 {"text": "Need to ask Prof. Nxumalo something, where is their office?", "entities": [{"start": 18, "end": 25, "label": "surname"}, {"start": 12, "end": 17, "label": "person_role"}]}
 {"text": "Where is Mr. Nxumalo's office?", "entities": [{"start": 13, "end": 20, "label": "surname"}, {"start": 9, "end": 12, "label": "person_role"}]}

@@ -31,7 +31,7 @@ class DBQuery:
     def get_current_day(self):
         return datetime.now().strftime("%A")
 
-    def fuzzy_match(self, query_value, column, table, min_score=80):
+    def fuzzy_match(self, query_value, column, table, min_score=70):
         self.cursor.execute(f"SELECT DISTINCT {column} FROM {table};")
         options = [row[column] for row in self.cursor.fetchall() if row[column]]
         match, score, _ = process.extractOne(query_value.lower(), options)
@@ -76,8 +76,8 @@ class DBQuery:
         return f"I couldn't find anyone with the surname {surname}."
 
     def handle_location_of(self, slots):
-        # 🚫 Remove hallucinated surnames like "class", "lesson"
-        hallucinated_starts = {"cla", "les", "lec", "less", "lect"}
+        # Remove hallucinated surnames like "class", "lesson"
+        hallucinated_starts = {"cla", "les", "lec", "less", "lect","and","And"}
         if "surname" in slots:
             s = slots["surname"].lower()
             if len(s) <= 6 and any(s.startswith(h) for h in hallucinated_starts):

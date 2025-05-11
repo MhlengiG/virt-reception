@@ -83,6 +83,26 @@ def send_to_subsystem4():
             "message": "Response still being processed or already acknowledged"
         })
 
+@app.route('/update_availability', methods=['POST'])
+def update_availability():
+    try:
+        data = request.get_json()
+        surname = data.get("staff_name")
+        status = data.get("available_today")
+
+        if surname and isinstance(status, int) and status in [0, 1]:
+            cursor = db_query.conn.cursor()
+            cursor.execute("UPDATE staff SET available_today = %s WHERE surname = %s", (status, surname))
+            db_query.conn.commit()
+            return jsonify({"status": "success"}), 200
+
+        return jsonify({"error": "Missing or invalid input"}), 400
+
+    except Exception as e:
+        traceback.print_exc()
+        return jsonify({"error": f"Internal server error: {e}"}), 500
+
+
 
 @app.route('/confirm-receipt', methods=['POST'])
 def confirm_from_subsystem4():

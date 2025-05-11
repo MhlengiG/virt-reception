@@ -13,6 +13,7 @@ COMMON_MISSPELLINGS = {
 ROLE_NORMALIZATION = {
     "proffesor": "Prof.",
     "professor": "Prof.",
+    "doctor": "Dr.",
     "prof": "Prof.",
     "dr": "Dr.",
     "mr": "Mr.",
@@ -24,6 +25,27 @@ def correct_spelling(text):
     for wrong, right in COMMON_MISSPELLINGS.items():
         text = text.replace(wrong, right)
     return text
+
+
+import re
+
+
+def normalize_titles(text: str) -> str:
+    title_map = {
+        r"\b(proff?essor|professor)\b": "Prof",
+        r"\b(prof)\b": "Prof",
+        r"\bdoctor\b": "Dr",
+        r"\bdr\b": "Dr",
+        r"\bdr\.\b": "Dr",
+        r"\bclass\b": "lesson",
+        r"\blecure\b": "lesson"
+    }
+
+    for pattern, replacement in title_map.items():
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+
+    return text
+
 
 def clean_surname(surname_text):
     # Remove punctuation and possessive suffixes
@@ -43,6 +65,8 @@ class FeatureExtractor:
 
     def extract(self, text, intent):
         text = correct_spelling(text)
+        text = normalize_titles(text)
+        print(text)
         if intent in ["greeting_query", "goodbye_query"]:
             return {}
 
@@ -116,7 +140,8 @@ def main():
             "Locate the AI lecture venue.",
             "Where is Ms. Zulu’s lab?",
             "Where’s the computer networks class?",
-            "Direct me to the nearest male toilet."
+            "Direct me to the nearest male toilet.",
+            "Can i speak to proffesor Xu?"
         ]
 
         print("🧪 Testing Feature Extraction for intent: location_of\n")
