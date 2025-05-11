@@ -1,2 +1,4 @@
-# created by virtualenv automatically
-virt-reception/
+__pycache__/
+*.pyc
+
+
