@@ -374,6 +374,276 @@
 {"text": "Where's Khuboni's artificial intelligence lecture in 2-04 S?", "entities": [{"start": 8, "end": 15, "label": "surname"}, {"start": 17, "end": 40, "label": "academic_subject"}, {"start": 41, "end": 48, "label": "class_type"}]}
 {"text": "Is the female toilet on the third floor accessible?", "entities": [{"start": 7, "end": 20, "label": "room_type"}]}
 {"text": "How do I find the Post Graduate Office on floor 5?", "entities": [{"start": 16, "end": 37, "label": "room_type"}]}
+{"text": "Where is the female toilet?", "entities": [{"start": 13, "end": 26, "label": "room_type"}]}
+{"text": "Take me to the female toilet.", "entities": [{"start": 15, "end": 28, "label": "room_type"}]}
+{"text": "Find the female toilet please.", "entities": [{"start": 9, "end": 22, "label": "room_type"}]}
+{"text": "How do I get to the female toilet?", "entities": [{"start": 20, "end": 33, "label": "room_type"}]}
+{"text": "I'm looking for the female toilet.", "entities": [{"start": 20, "end": 33, "label": "room_type"}]}
+{"text": "Locate the female toilet for me.", "entities": [{"start": 11, "end": 24, "label": "room_type"}]}
+{"text": "Which floor is the female toilet on?", "entities": [{"start": 19, "end": 32, "label": "room_type"}]}
+{"text": "Show me the female toilet.", "entities": [{"start": 12, "end": 25, "label": "room_type"}]}
+{"text": "I need directions to the female toilet.", "entities": [{"start": 25, "end": 38, "label": "room_type"}]}
+{"text": "Can I go to the female toilet now?", "entities": [{"start": 16, "end": 29, "label": "room_type"}]}
+{"text": "Where is the male toilet?", "entities": [{"start": 13, "end": 24, "label": "room_type"}]}
+{"text": "Take me to the male toilet.", "entities": [{"start": 15, "end": 26, "label": "room_type"}]}
+{"text": "Find the male toilet please.", "entities": [{"start": 9, "end": 20, "label": "room_type"}]}
+{"text": "How do I get to the male toilet?", "entities": [{"start": 20, "end": 31, "label": "room_type"}]}
+{"text": "I'm looking for the male toilet.", "entities": [{"start": 20, "end": 31, "label": "room_type"}]}
+{"text": "Locate the male toilet for me.", "entities": [{"start": 11, "end": 22, "label": "room_type"}]}
+{"text": "Which floor is the male toilet on?", "entities": [{"start": 19, "end": 30, "label": "room_type"}]}
+{"text": "Show me the male toilet.", "entities": [{"start": 12, "end": 23, "label": "room_type"}]}
+{"text": "I need directions to the male toilet.", "entities": [{"start": 25, "end": 36, "label": "room_type"}]}
+{"text": "Can I go to the male toilet now?", "entities": [{"start": 16, "end": 27, "label": "room_type"}]}
+{"text": "Where is the reception?", "entities": [{"start": 13, "end": 22, "label": "room_type"}]}
+{"text": "Take me to the reception.", "entities": [{"start": 15, "end": 24, "label": "room_type"}]}
+{"text": "Find the reception please.", "entities": [{"start": 9, "end": 18, "label": "room_type"}]}
+{"text": "How do I get to the reception?", "entities": [{"start": 20, "end": 29, "label": "room_type"}]}
+{"text": "I'm looking for the reception.", "entities": [{"start": 20, "end": 29, "label": "room_type"}]}
+{"text": "Locate the reception for me.", "entities": [{"start": 11, "end": 20, "label": "room_type"}]}
+{"text": "Which floor is the reception on?", "entities": [{"start": 19, "end": 28, "label": "room_type"}]}
+{"text": "Show me the reception.", "entities": [{"start": 12, "end": 21, "label": "room_type"}]}
+{"text": "I need directions to the reception.", "entities": [{"start": 25, "end": 34, "label": "room_type"}]}
+{"text": "Can I go to the reception now?", "entities": [{"start": 16, "end": 25, "label": "room_type"}]}
+{"text": "Where is the emergency exit?", "entities": [{"start": 13, "end": 27, "label": "room_type"}]}
+{"text": "Take me to the emergency exit.", "entities": [{"start": 15, "end": 29, "label": "room_type"}]}
+{"text": "Find the emergency exit please.", "entities": [{"start": 9, "end": 23, "label": "room_type"}]}
+{"text": "How do I get to the emergency exit?", "entities": [{"start": 20, "end": 34, "label": "room_type"}]}
+{"text": "I'm looking for the emergency exit.", "entities": [{"start": 20, "end": 34, "label": "room_type"}]}
+{"text": "Locate the emergency exit for me.", "entities": [{"start": 11, "end": 25, "label": "room_type"}]}
+{"text": "Which floor is the emergency exit on?", "entities": [{"start": 19, "end": 33, "label": "room_type"}]}
+{"text": "Show me the emergency exit.", "entities": [{"start": 12, "end": 26, "label": "room_type"}]}
+{"text": "I need directions to the emergency exit.", "entities": [{"start": 25, "end": 39, "label": "room_type"}]}
+{"text": "Can I go to the emergency exit now?", "entities": [{"start": 16, "end": 30, "label": "room_type"}]}
+{"text": "Where is the admin office?", "entities": [{"start": 13, "end": 25, "label": "room_type"}]}
+{"text": "Take me to the admin office.", "entities": [{"start": 15, "end": 27, "label": "room_type"}]}
+{"text": "Find the admin office please.", "entities": [{"start": 9, "end": 21, "label": "room_type"}]}
+{"text": "How do I get to the admin office?", "entities": [{"start": 20, "end": 32, "label": "room_type"}]}
+{"text": "I'm looking for the admin office.", "entities": [{"start": 20, "end": 32, "label": "room_type"}]}
+{"text": "Locate the admin office for me.", "entities": [{"start": 11, "end": 23, "label": "room_type"}]}
+{"text": "Which floor is the admin office on?", "entities": [{"start": 19, "end": 31, "label": "room_type"}]}
+{"text": "Show me the admin office.", "entities": [{"start": 12, "end": 24, "label": "room_type"}]}
+{"text": "I need directions to the admin office.", "entities": [{"start": 25, "end": 37, "label": "room_type"}]}
+{"text": "Can I go to the admin office now?", "entities": [{"start": 16, "end": 28, "label": "room_type"}]}
+{"text": "Where is the finance office?", "entities": [{"start": 13, "end": 27, "label": "room_type"}]}
+{"text": "Take me to the finance office.", "entities": [{"start": 15, "end": 29, "label": "room_type"}]}
+{"text": "Find the finance office please.", "entities": [{"start": 9, "end": 23, "label": "room_type"}]}
+{"text": "How do I get to the finance office?", "entities": [{"start": 20, "end": 34, "label": "room_type"}]}
+{"text": "I'm looking for the finance office.", "entities": [{"start": 20, "end": 34, "label": "room_type"}]}
+{"text": "Locate the finance office for me.", "entities": [{"start": 11, "end": 25, "label": "room_type"}]}
+{"text": "Which floor is the finance office on?", "entities": [{"start": 19, "end": 33, "label": "room_type"}]}
+{"text": "Show me the finance office.", "entities": [{"start": 12, "end": 26, "label": "room_type"}]}
+{"text": "I need directions to the finance office.", "entities": [{"start": 25, "end": 39, "label": "room_type"}]}
+{"text": "Can I go to the finance office now?", "entities": [{"start": 16, "end": 30, "label": "room_type"}]}
+{"text": "Where is the ict office?", "entities": [{"start": 13, "end": 23, "label": "room_type"}]}
+{"text": "Take me to the ict office.", "entities": [{"start": 15, "end": 25, "label": "room_type"}]}
+{"text": "Find the ict office please.", "entities": [{"start": 9, "end": 19, "label": "room_type"}]}
+{"text": "How do I get to the ict office?", "entities": [{"start": 20, "end": 30, "label": "room_type"}]}
+{"text": "I'm looking for the ict office.", "entities": [{"start": 20, "end": 30, "label": "room_type"}]}
+{"text": "Locate the ict office for me.", "entities": [{"start": 11, "end": 21, "label": "room_type"}]}
+{"text": "Which floor is the ict office on?", "entities": [{"start": 19, "end": 29, "label": "room_type"}]}
+{"text": "Show me the ict office.", "entities": [{"start": 12, "end": 22, "label": "room_type"}]}
+{"text": "I need directions to the ict office.", "entities": [{"start": 25, "end": 35, "label": "room_type"}]}
+{"text": "Can I go to the ict office now?", "entities": [{"start": 16, "end": 26, "label": "room_type"}]}
+{"text": "Where is the Controls Lab?", "entities": [{"start": 13, "end": 25, "label": "room_type"}]}
+{"text": "Take me to the Controls Lab.", "entities": [{"start": 15, "end": 27, "label": "room_type"}]}
+{"text": "Find the Controls Lab please.", "entities": [{"start": 9, "end": 21, "label": "room_type"}]}
+{"text": "How do I get to the Controls Lab?", "entities": [{"start": 20, "end": 32, "label": "room_type"}]}
+{"text": "I'm looking for the Controls Lab.", "entities": [{"start": 20, "end": 32, "label": "room_type"}]}
+{"text": "Locate the Controls Lab for me.", "entities": [{"start": 11, "end": 23, "label": "room_type"}]}
+{"text": "Which floor is the Controls Lab on?", "entities": [{"start": 19, "end": 31, "label": "room_type"}]}
+{"text": "Show me the Controls Lab.", "entities": [{"start": 12, "end": 24, "label": "room_type"}]}
+{"text": "I need directions to the Controls Lab.", "entities": [{"start": 25, "end": 37, "label": "room_type"}]}
+{"text": "Can I go to the Controls Lab now?", "entities": [{"start": 16, "end": 28, "label": "room_type"}]}
+{"text": "Where is the Fourth Year Computer Lab?", "entities": [{"start": 13, "end": 37, "label": "room_type"}]}
+{"text": "Take me to the Fourth Year Computer Lab.", "entities": [{"start": 15, "end": 39, "label": "room_type"}]}
+{"text": "Find the Fourth Year Computer Lab please.", "entities": [{"start": 9, "end": 33, "label": "room_type"}]}
+{"text": "How do I get to the Fourth Year Computer Lab?", "entities": [{"start": 20, "end": 44, "label": "room_type"}]}
+{"text": "I'm looking for the Fourth Year Computer Lab.", "entities": [{"start": 20, "end": 44, "label": "room_type"}]}
+{"text": "Locate the Fourth Year Computer Lab for me.", "entities": [{"start": 11, "end": 35, "label": "room_type"}]}
+{"text": "Which floor is the Fourth Year Computer Lab on?", "entities": [{"start": 19, "end": 43, "label": "room_type"}]}
+{"text": "Show me the Fourth Year Computer Lab.", "entities": [{"start": 12, "end": 36, "label": "room_type"}]}
+{"text": "I need directions to the Fourth Year Computer Lab.", "entities": [{"start": 25, "end": 49, "label": "room_type"}]}
+{"text": "Can I go to the Fourth Year Computer Lab now?", "entities": [{"start": 16, "end": 40, "label": "room_type"}]}
+{"text": "Where is the Fourth Year Electronics Computer Lab?", "entities": [{"start": 13, "end": 49, "label": "room_type"}]}
+{"text": "Take me to the Fourth Year Electronics Computer Lab.", "entities": [{"start": 15, "end": 51, "label": "room_type"}]}
+{"text": "Find the Fourth Year Electronics Computer Lab please.", "entities": [{"start": 9, "end": 45, "label": "room_type"}]}
+{"text": "How do I get to the Fourth Year Electronics Computer Lab?", "entities": [{"start": 20, "end": 56, "label": "room_type"}]}
+{"text": "I'm looking for the Fourth Year Electronics Computer Lab.", "entities": [{"start": 20, "end": 56, "label": "room_type"}]}
+{"text": "Locate the Fourth Year Electronics Computer Lab for me.", "entities": [{"start": 11, "end": 47, "label": "room_type"}]}
+{"text": "Which floor is the Fourth Year Electronics Computer Lab on?", "entities": [{"start": 19, "end": 55, "label": "room_type"}]}
+{"text": "Show me the Fourth Year Electronics Computer Lab.", "entities": [{"start": 12, "end": 48, "label": "room_type"}]}
+{"text": "I need directions to the Fourth Year Electronics Computer Lab.", "entities": [{"start": 25, "end": 61, "label": "room_type"}]}
+{"text": "Can I go to the Fourth Year Electronics Computer Lab now?", "entities": [{"start": 16, "end": 52, "label": "room_type"}]}
+{"text": "Where is the Fourth Year Electrical Computer Lab?", "entities": [{"start": 13, "end": 48, "label": "room_type"}]}
+{"text": "Take me to the Fourth Year Electrical Computer Lab.", "entities": [{"start": 15, "end": 50, "label": "room_type"}]}
+{"text": "Find the Fourth Year Electrical Computer Lab please.", "entities": [{"start": 9, "end": 44, "label": "room_type"}]}
+{"text": "How do I get to the Fourth Year Electrical Computer Lab?", "entities": [{"start": 20, "end": 55, "label": "room_type"}]}
+{"text": "I'm looking for the Fourth Year Electrical Computer Lab.", "entities": [{"start": 20, "end": 55, "label": "room_type"}]}
+{"text": "Locate the Fourth Year Electrical Computer Lab for me.", "entities": [{"start": 11, "end": 46, "label": "room_type"}]}
+{"text": "Which floor is the Fourth Year Electrical Computer Lab on?", "entities": [{"start": 19, "end": 54, "label": "room_type"}]}
+{"text": "Show me the Fourth Year Electrical Computer Lab.", "entities": [{"start": 12, "end": 47, "label": "room_type"}]}
+{"text": "I need directions to the Fourth Year Electrical Computer Lab.", "entities": [{"start": 25, "end": 60, "label": "room_type"}]}
+{"text": "Can I go to the Fourth Year Electrical Computer Lab now?", "entities": [{"start": 16, "end": 51, "label": "room_type"}]}
+{"text": "Where is the Third Year Labratory?", "entities": [{"start": 13, "end": 33, "label": "room_type"}]}
+{"text": "Take me to the Third Year Labratory.", "entities": [{"start": 15, "end": 35, "label": "room_type"}]}
+{"text": "Find the Third Year Labratory please.", "entities": [{"start": 9, "end": 29, "label": "room_type"}]}
+{"text": "How do I get to the Third Year Labratory?", "entities": [{"start": 20, "end": 40, "label": "room_type"}]}
+{"text": "I'm looking for the Third Year Labratory.", "entities": [{"start": 20, "end": 40, "label": "room_type"}]}
+{"text": "Locate the Third Year Labratory for me.", "entities": [{"start": 11, "end": 31, "label": "room_type"}]}
+{"text": "Which floor is the Third Year Labratory on?", "entities": [{"start": 19, "end": 39, "label": "room_type"}]}
+{"text": "Show me the Third Year Labratory.", "entities": [{"start": 12, "end": 32, "label": "room_type"}]}
+{"text": "I need directions to the Third Year Labratory.", "entities": [{"start": 25, "end": 45, "label": "room_type"}]}
+{"text": "Can I go to the Third Year Labratory now?", "entities": [{"start": 16, "end": 36, "label": "room_type"}]}
+{"text": "Where is the Second Year Labratory?", "entities": [{"start": 13, "end": 34, "label": "room_type"}]}
+{"text": "Take me to the Second Year Labratory.", "entities": [{"start": 15, "end": 36, "label": "room_type"}]}
+{"text": "Find the Second Year Labratory please.", "entities": [{"start": 9, "end": 30, "label": "room_type"}]}
+{"text": "How do I get to the Second Year Labratory?", "entities": [{"start": 20, "end": 41, "label": "room_type"}]}
+{"text": "I'm looking for the Second Year Labratory.", "entities": [{"start": 20, "end": 41, "label": "room_type"}]}
+{"text": "Locate the Second Year Labratory for me.", "entities": [{"start": 11, "end": 32, "label": "room_type"}]}
+{"text": "Which floor is the Second Year Labratory on?", "entities": [{"start": 19, "end": 40, "label": "room_type"}]}
+{"text": "Show me the Second Year Labratory.", "entities": [{"start": 12, "end": 33, "label": "room_type"}]}
+{"text": "I need directions to the Second Year Labratory.", "entities": [{"start": 25, "end": 46, "label": "room_type"}]}
+{"text": "Can I go to the Second Year Labratory now?", "entities": [{"start": 16, "end": 37, "label": "room_type"}]}
+{"text": "Where is the Digital Systems Lab?", "entities": [{"start": 13, "end": 32, "label": "room_type"}]}
+{"text": "Take me to the Digital Systems Lab.", "entities": [{"start": 15, "end": 34, "label": "room_type"}]}
+{"text": "Find the Digital Systems Lab please.", "entities": [{"start": 9, "end": 28, "label": "room_type"}]}
+{"text": "How do I get to the Digital Systems Lab?", "entities": [{"start": 20, "end": 39, "label": "room_type"}]}
+{"text": "I'm looking for the Digital Systems Lab.", "entities": [{"start": 20, "end": 39, "label": "room_type"}]}
+{"text": "Locate the Digital Systems Lab for me.", "entities": [{"start": 11, "end": 30, "label": "room_type"}]}
+{"text": "Which floor is the Digital Systems Lab on?", "entities": [{"start": 19, "end": 38, "label": "room_type"}]}
+{"text": "Show me the Digital Systems Lab.", "entities": [{"start": 12, "end": 31, "label": "room_type"}]}
+{"text": "I need directions to the Digital Systems Lab.", "entities": [{"start": 25, "end": 44, "label": "room_type"}]}
+{"text": "Can I go to the Digital Systems Lab now?", "entities": [{"start": 16, "end": 35, "label": "room_type"}]}
+{"text": "Where is the Digital Signal Processing Lab?", "entities": [{"start": 13, "end": 42, "label": "room_type"}]}
+{"text": "Take me to the Digital Signal Processing Lab.", "entities": [{"start": 15, "end": 44, "label": "room_type"}]}
+{"text": "Find the Digital Signal Processing Lab please.", "entities": [{"start": 9, "end": 38, "label": "room_type"}]}
+{"text": "How do I get to the Digital Signal Processing Lab?", "entities": [{"start": 20, "end": 49, "label": "room_type"}]}
+{"text": "I'm looking for the Digital Signal Processing Lab.", "entities": [{"start": 20, "end": 49, "label": "room_type"}]}
+{"text": "Locate the Digital Signal Processing Lab for me.", "entities": [{"start": 11, "end": 40, "label": "room_type"}]}
+{"text": "Which floor is the Digital Signal Processing Lab on?", "entities": [{"start": 19, "end": 48, "label": "room_type"}]}
+{"text": "Show me the Digital Signal Processing Lab.", "entities": [{"start": 12, "end": 41, "label": "room_type"}]}
+{"text": "I need directions to the Digital Signal Processing Lab.", "entities": [{"start": 25, "end": 54, "label": "room_type"}]}
+{"text": "Can I go to the Digital Signal Processing Lab now?", "entities": [{"start": 16, "end": 45, "label": "room_type"}]}
+{"text": "Where is the Design Lab?", "entities": [{"start": 13, "end": 23, "label": "room_type"}]}
+{"text": "Take me to the Design Lab.", "entities": [{"start": 15, "end": 25, "label": "room_type"}]}
+{"text": "Find the Design Lab please.", "entities": [{"start": 9, "end": 19, "label": "room_type"}]}
+{"text": "How do I get to the Design Lab?", "entities": [{"start": 20, "end": 30, "label": "room_type"}]}
+{"text": "I'm looking for the Design Lab.", "entities": [{"start": 20, "end": 30, "label": "room_type"}]}
+{"text": "Locate the Design Lab for me.", "entities": [{"start": 11, "end": 21, "label": "room_type"}]}
+{"text": "Which floor is the Design Lab on?", "entities": [{"start": 19, "end": 29, "label": "room_type"}]}
+{"text": "Show me the Design Lab.", "entities": [{"start": 12, "end": 22, "label": "room_type"}]}
+{"text": "I need directions to the Design Lab.", "entities": [{"start": 25, "end": 35, "label": "room_type"}]}
+{"text": "Can I go to the Design Lab now?", "entities": [{"start": 16, "end": 26, "label": "room_type"}]}
+{"text": "Where is the Fourth Year Computer Design Lab?", "entities": [{"start": 13, "end": 44, "label": "room_type"}]}
+{"text": "Take me to the Fourth Year Computer Design Lab.", "entities": [{"start": 15, "end": 46, "label": "room_type"}]}
+{"text": "Find the Fourth Year Computer Design Lab please.", "entities": [{"start": 9, "end": 40, "label": "room_type"}]}
+{"text": "How do I get to the Fourth Year Computer Design Lab?", "entities": [{"start": 20, "end": 51, "label": "room_type"}]}
+{"text": "I'm looking for the Fourth Year Computer Design Lab.", "entities": [{"start": 20, "end": 51, "label": "room_type"}]}
+{"text": "Locate the Fourth Year Computer Design Lab for me.", "entities": [{"start": 11, "end": 42, "label": "room_type"}]}
+{"text": "Which floor is the Fourth Year Computer Design Lab on?", "entities": [{"start": 19, "end": 50, "label": "room_type"}]}
+{"text": "Show me the Fourth Year Computer Design Lab.", "entities": [{"start": 12, "end": 43, "label": "room_type"}]}
+{"text": "I need directions to the Fourth Year Computer Design Lab.", "entities": [{"start": 25, "end": 56, "label": "room_type"}]}
+{"text": "Can I go to the Fourth Year Computer Design Lab now?", "entities": [{"start": 16, "end": 47, "label": "room_type"}]}
+{"text": "Where is the Second Year Computer Lab?", "entities": [{"start": 13, "end": 37, "label": "room_type"}]}
+{"text": "Take me to the Second Year Computer Lab.", "entities": [{"start": 15, "end": 39, "label": "room_type"}]}
+{"text": "Find the Second Year Computer Lab please.", "entities": [{"start": 9, "end": 33, "label": "room_type"}]}
+{"text": "How do I get to the Second Year Computer Lab?", "entities": [{"start": 20, "end": 44, "label": "room_type"}]}
+{"text": "I'm looking for the Second Year Computer Lab.", "entities": [{"start": 20, "end": 44, "label": "room_type"}]}
+{"text": "Locate the Second Year Computer Lab for me.", "entities": [{"start": 11, "end": 35, "label": "room_type"}]}
+{"text": "Which floor is the Second Year Computer Lab on?", "entities": [{"start": 19, "end": 43, "label": "room_type"}]}
+{"text": "Show me the Second Year Computer Lab.", "entities": [{"start": 12, "end": 36, "label": "room_type"}]}
+{"text": "I need directions to the Second Year Computer Lab.", "entities": [{"start": 25, "end": 49, "label": "room_type"}]}
+{"text": "Can I go to the Second Year Computer Lab now?", "entities": [{"start": 16, "end": 40, "label": "room_type"}]}
+{"text": "Where is the Machines Lab?", "entities": [{"start": 13, "end": 25, "label": "room_type"}]}
+{"text": "Take me to the Machines Lab.", "entities": [{"start": 15, "end": 27, "label": "room_type"}]}
+{"text": "Find the Machines Lab please.", "entities": [{"start": 9, "end": 21, "label": "room_type"}]}
+{"text": "How do I get to the Machines Lab?", "entities": [{"start": 20, "end": 32, "label": "room_type"}]}
+{"text": "I'm looking for the Machines Lab.", "entities": [{"start": 20, "end": 32, "label": "room_type"}]}
+{"text": "Locate the Machines Lab for me.", "entities": [{"start": 11, "end": 23, "label": "room_type"}]}
+{"text": "Which floor is the Machines Lab on?", "entities": [{"start": 19, "end": 31, "label": "room_type"}]}
+{"text": "Show me the Machines Lab.", "entities": [{"start": 12, "end": 24, "label": "room_type"}]}
+{"text": "I need directions to the Machines Lab.", "entities": [{"start": 25, "end": 37, "label": "room_type"}]}
+{"text": "Can I go to the Machines Lab now?", "entities": [{"start": 16, "end": 28, "label": "room_type"}]}
+{"text": "Where is the Microwave Lab?", "entities": [{"start": 13, "end": 26, "label": "room_type"}]}
+{"text": "Take me to the Microwave Lab.", "entities": [{"start": 15, "end": 28, "label": "room_type"}]}
+{"text": "Find the Microwave Lab please.", "entities": [{"start": 9, "end": 22, "label": "room_type"}]}
+{"text": "How do I get to the Microwave Lab?", "entities": [{"start": 20, "end": 33, "label": "room_type"}]}
+{"text": "I'm looking for the Microwave Lab.", "entities": [{"start": 20, "end": 33, "label": "room_type"}]}
+{"text": "Locate the Microwave Lab for me.", "entities": [{"start": 11, "end": 24, "label": "room_type"}]}
+{"text": "Which floor is the Microwave Lab on?", "entities": [{"start": 19, "end": 32, "label": "room_type"}]}
+{"text": "Show me the Microwave Lab.", "entities": [{"start": 12, "end": 25, "label": "room_type"}]}
+{"text": "I need directions to the Microwave Lab.", "entities": [{"start": 25, "end": 38, "label": "room_type"}]}
+{"text": "Can I go to the Microwave Lab now?", "entities": [{"start": 16, "end": 29, "label": "room_type"}]}
+{"text": "Where is the Power Electronics Lab?", "entities": [{"start": 13, "end": 34, "label": "room_type"}]}
+{"text": "Take me to the Power Electronics Lab.", "entities": [{"start": 15, "end": 36, "label": "room_type"}]}
+{"text": "Find the Power Electronics Lab please.", "entities": [{"start": 9, "end": 30, "label": "room_type"}]}
+{"text": "How do I get to the Power Electronics Lab?", "entities": [{"start": 20, "end": 41, "label": "room_type"}]}
+{"text": "I'm looking for the Power Electronics Lab.", "entities": [{"start": 20, "end": 41, "label": "room_type"}]}
+{"text": "Locate the Power Electronics Lab for me.", "entities": [{"start": 11, "end": 32, "label": "room_type"}]}
+{"text": "Which floor is the Power Electronics Lab on?", "entities": [{"start": 19, "end": 40, "label": "room_type"}]}
+{"text": "Show me the Power Electronics Lab.", "entities": [{"start": 12, "end": 33, "label": "room_type"}]}
+{"text": "I need directions to the Power Electronics Lab.", "entities": [{"start": 25, "end": 46, "label": "room_type"}]}
+{"text": "Can I go to the Power Electronics Lab now?", "entities": [{"start": 16, "end": 37, "label": "room_type"}]}
+{"text": "Where is the Illumination Lab?", "entities": [{"start": 13, "end": 29, "label": "room_type"}]}
+{"text": "Take me to the Illumination Lab.", "entities": [{"start": 15, "end": 31, "label": "room_type"}]}
+{"text": "Find the Illumination Lab please.", "entities": [{"start": 9, "end": 25, "label": "room_type"}]}
+{"text": "How do I get to the Illumination Lab?", "entities": [{"start": 20, "end": 36, "label": "room_type"}]}
+{"text": "I'm looking for the Illumination Lab.", "entities": [{"start": 20, "end": 36, "label": "room_type"}]}
+{"text": "Locate the Illumination Lab for me.", "entities": [{"start": 11, "end": 27, "label": "room_type"}]}
+{"text": "Which floor is the Illumination Lab on?", "entities": [{"start": 19, "end": 35, "label": "room_type"}]}
+{"text": "Show me the Illumination Lab.", "entities": [{"start": 12, "end": 28, "label": "room_type"}]}
+{"text": "I need directions to the Illumination Lab.", "entities": [{"start": 25, "end": 41, "label": "room_type"}]}
+{"text": "Can I go to the Illumination Lab now?", "entities": [{"start": 16, "end": 32, "label": "room_type"}]}
+{"text": "Where is the Control Research?", "entities": [{"start": 13, "end": 29, "label": "room_type"}]}
+{"text": "Take me to the Control Research.", "entities": [{"start": 15, "end": 31, "label": "room_type"}]}
+{"text": "Find the Control Research please.", "entities": [{"start": 9, "end": 25, "label": "room_type"}]}
+{"text": "How do I get to the Control Research?", "entities": [{"start": 20, "end": 36, "label": "room_type"}]}
+{"text": "I'm looking for the Control Research.", "entities": [{"start": 20, "end": 36, "label": "room_type"}]}
+{"text": "Locate the Control Research for me.", "entities": [{"start": 11, "end": 27, "label": "room_type"}]}
+{"text": "Which floor is the Control Research on?", "entities": [{"start": 19, "end": 35, "label": "room_type"}]}
+{"text": "Show me the Control Research.", "entities": [{"start": 12, "end": 28, "label": "room_type"}]}
+{"text": "I need directions to the Control Research.", "entities": [{"start": 25, "end": 41, "label": "room_type"}]}
+{"text": "Can I go to the Control Research now?", "entities": [{"start": 16, "end": 32, "label": "room_type"}]}
+{"text": "Where is the Machinery Hall?", "entities": [{"start": 13, "end": 27, "label": "room_type"}]}
+{"text": "Take me to the Machinery Hall.", "entities": [{"start": 15, "end": 29, "label": "room_type"}]}
+{"text": "Find the Machinery Hall please.", "entities": [{"start": 9, "end": 23, "label": "room_type"}]}
+{"text": "How do I get to the Machinery Hall?", "entities": [{"start": 20, "end": 34, "label": "room_type"}]}
+{"text": "I'm looking for the Machinery Hall.", "entities": [{"start": 20, "end": 34, "label": "room_type"}]}
+{"text": "Locate the Machinery Hall for me.", "entities": [{"start": 11, "end": 25, "label": "room_type"}]}
+{"text": "Which floor is the Machinery Hall on?", "entities": [{"start": 19, "end": 33, "label": "room_type"}]}
+{"text": "Show me the Machinery Hall.", "entities": [{"start": 12, "end": 26, "label": "room_type"}]}
+{"text": "I need directions to the Machinery Hall.", "entities": [{"start": 25, "end": 39, "label": "room_type"}]}
+{"text": "Can I go to the Machinery Hall now?", "entities": [{"start": 16, "end": 30, "label": "room_type"}]}
+{"text": "Where is the Hea y Current Workshop?", "entities": [{"start": 13, "end": 34, "label": "room_type"}]}
+{"text": "Take me to the Hea y Current Workshop.", "entities": [{"start": 15, "end": 36, "label": "room_type"}]}
+{"text": "Find the Hea y Current Workshop please.", "entities": [{"start": 9, "end": 30, "label": "room_type"}]}
+{"text": "How do I get to the Heavy Current Workshop?", "entities": [{"start": 20, "end": 41, "label": "room_type"}]}
+{"text": "I'm looking for the Heavy Current Workshop.", "entities": [{"start": 20, "end": 41, "label": "room_type"}]}
+{"text": "Locate the Heavy Current Workshop for me.", "entities": [{"start": 11, "end": 32, "label": "room_type"}]}
+{"text": "Which floor is the Heavy Current Workshop on?", "entities": [{"start": 19, "end": 40, "label": "room_type"}]}
+{"text": "Show me the Heavy Current Workshop.", "entities": [{"start": 12, "end": 33, "label": "room_type"}]}
+{"text": "I need directions to the Heavy Current Workshop.", "entities": [{"start": 25, "end": 46, "label": "room_type"}]}
+{"text": "Can I go to the Heavy Current Workshop now?", "entities": [{"start": 16, "end": 37, "label": "room_type"}]}
+{"text": "Where is the Post Graduate Office?", "entities": [{"start": 13, "end": 33, "label": "room_type"}]}
+{"text": "Take me to the Post Graduate Office.", "entities": [{"start": 15, "end": 35, "label": "room_type"}]}
+{"text": "Find the Post Graduate Office please.", "entities": [{"start": 9, "end": 29, "label": "room_type"}]}
+{"text": "How do I get to the Post Graduate Office?", "entities": [{"start": 20, "end": 40, "label": "room_type"}]}
+{"text": "I'm looking for the Post Graduate Office.", "entities": [{"start": 20, "end": 40, "label": "room_type"}]}
+{"text": "Locate the Post Graduate Office for me.", "entities": [{"start": 11, "end": 31, "label": "room_type"}]}
+{"text": "Which floor is the Post Graduate Office on?", "entities": [{"start": 19, "end": 39, "label": "room_type"}]}
+{"text": "Show me the Post Graduate Office.", "entities": [{"start": 12, "end": 32, "label": "room_type"}]}
+{"text": "I need directions to the Post Graduate Office.", "entities": [{"start": 25, "end": 45, "label": "room_type"}]}
+{"text": "Can I go to the Post Graduate Office now?", "entities": [{"start": 16, "end": 36, "label": "room_type"}]}
+{"text": "Where is the Lift?", "entities": [{"start": 13, "end": 17, "label": "room_type"}]}
+{"text": "Take me to the Lift.", "entities": [{"start": 15, "end": 19, "label": "room_type"}]}
+{"text": "Find the Lift please.", "entities": [{"start": 9, "end": 13, "label": "room_type"}]}
+{"text": "How do I get to the Lift?", "entities": [{"start": 20, "end": 24, "label": "room_type"}]}
+{"text": "I'm looking for the Lift.", "entities": [{"start": 20, "end": 24, "label": "room_type"}]}
+{"text": "Locate the Lift for me.", "entities": [{"start": 11, "end": 15, "label": "room_type"}]}
+{"text": "Which floor is the Lift on?", "entities": [{"start": 19, "end": 23, "label": "room_type"}]}
+{"text": "Show me the Lift.", "entities": [{"start": 12, "end": 16, "label": "room_type"}]}
+{"text": "I need directions to the Lift.", "entities": [{"start": 25, "end": 29, "label": "room_type"}]}
+{"text": "Can I go to the Lift now?", "entities": [{"start": 16, "end": 20, "label": "room_type"}]}
 {"text": "Where is Prof. Moodley's computer architecture practical?", "entities": [{"start": 9, "end": 14, "label": "person_role"}, {"start": 16, "end": 23, "label": "surname"}, {"start": 25, "end": 46, "label": "academic_subject"}, {"start": 47, "end": 56, "label": "class_type"}]}
 {"text": "Is there an emergency exit near the Machinery Hall?", "entities": [{"start": 12, "end": 25, "label": "room_type"}, {"start": 35, "end": 49, "label": "room_type"}]}
 {"text": "When is the database practical today?", "entities": [{"start": 12, "end": 20, "label": "academic_subject"}, {"start": 21, "end": 30, "label": "class_type"}, {"start": 31, "end": 36, "label": "day"}]}
@@ -472,8 +742,12 @@
 {"text": "Find me nearest bathroom in Dennis Worrall", "entities": [{"start": 16, "end": 24, "label": "room_type"}, {"start": 28, "end": 41, "label": "building_name"}]}
 {"text": "Where can I find the reception in Shepstone?", "entities": [{"start": 20, "end": 29, "label": "room_type"}, {"start": 33, "end": 42, "label": "building_name"}]}
 {"text": "Prof Naidoo's artificial intelligence class is where?", "entities": [{"start": 0, "end": 4, "label": "person_role"}, {"start": 5, "end": 11, "label": "surname"}, {"start": 13, "end": 36, "label": "academic_subject"}, {"start": 37, "end": 42, "label": "class_type"}]}
-{"text": "Directions to stattics tutorial in room 3-08 pls", "entities": [{"start": 14, "end": 22, "label": "academic_subject"}, {"start": 23, "end": 31, "label": "class_type"}]}
+{"text": "Directions to statistics tutorial in room 3-08 pls", "entities": [{"start": 14, "end": 22, "label": "academic_subject"}, {"start": 23, "end": 31, "label": "class_type"}]}
 {"text": "academic record online access not working help", "entities": [{"start": 0, "end": 16, "label": "faq_topic"}]}
+{"text": "Lift?", "entities": [{"start": 0, "end": 4, "label": "room_type"}]}
+{"text": "Where is the lift?", "entities": [{"start": 12, "end": 16, "label": "room_type"}]}
+{"text": "Lift please.", "entities": [{"start": 0, "end": 4, "label": "room_type"}]}
+{"text": "Take me to the lift.", "entities": [{"start": 16, "end": 20, "label": "room_type"}]}
 {"text": "I'm looking for the statistics tutorial.", "entities": [{"start": 18, "end": 28, "label": "academic_subject"}, {"start": 29, "end": 37, "label": "class_type"}]}
 {"text": "Where's the nearest exit in the Shepstone building?", "entities": [{"start": 18, "end": 22, "label": "room_type"}, {"start": 30, "end": 49, "label": "building_name"}]}
 {"text": "Find the AI lab.", "entities": [{"start": 9, "end": 11, "label": "academic_subject"}, {"start": 12, "end": 15, "label": "class_type"}]}

@@ -3,7 +3,7 @@ import requests
 url = "http://3.78.230.164:5000/update_availability"
 
 payload = {
-    "staff_name": "Quazi",
+    "staff_name": "Xu",
     "available_today": 1
 }
 
