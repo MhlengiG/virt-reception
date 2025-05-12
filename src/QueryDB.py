@@ -1,4 +1,3 @@
-# Final complete DBQuery class with all upgrades and enhancements
 from datetime import datetime, timedelta, time
 import random
 import mysql.connector
@@ -23,11 +22,10 @@ class DBQuery:
             user=user,
             password=password,
             database=database,
-            ssl_disabled = True
+            ssl_disabled=True
         )
         self.cursor = self.conn.cursor(dictionary=True)
         self.conn.ping(reconnect=True, attempts=3, delay=2)
-        # self.cursor = self.conn.cursor()
 
     def ensure_connection(self):
         try:
@@ -45,6 +43,8 @@ class DBQuery:
         options = [row[column] for row in self.cursor.fetchall() if row[column]]
         match, score, _ = process.extractOne(query_value.lower(), options)
         print(f"🔍 Fuzzy Match: '{query_value}' → '{match}' [score: {score}]")
+        if score < min_score:
+            print(f"⚠️ Low fuzzy score [{score}] for: {query_value} on {column}")
         return match if score >= min_score else None
 
     def query(self, intent, slots):
@@ -71,7 +71,8 @@ class DBQuery:
         elif intent == "timetable_query":
             return self.handle_timetable_query(slots)
 
-        return "Sorry, I’m not trained to handle that request."
+        return ("Sorry, I didn’t quite catch that. "
+                "Try asking something like 'Where is Dr. Patel’s office?' or 'When is the next Control Systems lecture?'")
 
     def handle_staff_availability(self, slots):
         self.ensure_connection()
@@ -79,16 +80,23 @@ class DBQuery:
             return "Please specify the staff member."
 
         surname = self.fuzzy_match(slots["surname"], "surname", "staff") or slots["surname"]
-        self.cursor.execute("SELECT available_today FROM staff WHERE surname = %s", (surname,))
+        self.cursor.execute("SELECT available_today, office FROM staff WHERE surname = %s", (surname,))
         result = self.cursor.fetchone()
         if result:
-            return f"Yes, {surname} is currently available." if result["available_today"] else f"No, {surname} is currently unavailable or in class."
+            availability_msg = (
+                f"Yes, {surname} is currently available."
+                if result["available_today"]
+                else f"No, {surname} is currently unavailable or in class."
+            )
+            if result.get("office"):
+                availability_msg += f" Their office is in room {result['office']}."
+            return availability_msg
+
         return f"I couldn't find anyone with the surname {surname}."
 
     def handle_location_of(self, slots):
         self.ensure_connection()
-        # Remove hallucinated surnames like "class", "lesson"
-        hallucinated_starts = {"cla", "les", "lec", "less", "lect","and","And"}
+        hallucinated_starts = {"cla", "les", "lec", "less", "lect", "and", "And"}
         if "surname" in slots:
             s = slots["surname"].lower()
             if len(s) <= 6 and any(s.startswith(h) for h in hallucinated_starts):
@@ -96,7 +104,6 @@ class DBQuery:
                 slots.pop("surname", None)
                 slots.pop("person_role", None)
 
-        # 🔧 Normalize class_type
         class_type_map = {
             "lesson?": "lecture", "lesson": "lecture", "lessopn": "lecture",
             "lect": "lecture", "class": "lecture", "lecture?": "lecture",
@@ -106,7 +113,6 @@ class DBQuery:
         original_type = slots.get("class_type", "lecture").lower()
         class_type = class_type_map.get(original_type, original_type)
 
-        # 🧑‍🏫 Staff office lookup
         if "surname" in slots:
             surname = self.fuzzy_match(slots["surname"], "surname", "staff") or slots["surname"]
             self.cursor.execute("SELECT office FROM staff WHERE surname = %s", (surname,))
@@ -115,55 +121,39 @@ class DBQuery:
                 return f"You can find {surname}'s office in room {result['office']}."
             return f"No office details found for {surname}."
 
-        # 🏛 Room type lookup (e.g. toilets, labs, reception)
         if "room_type" in slots:
             room_type_raw = slots["room_type"]
             fuzzy_room_type = self.fuzzy_match(room_type_raw, "room_type", "room_locations") or room_type_raw
-
-            self.cursor.execute("""
-                SELECT location FROM room_locations
-                WHERE room_type = %s
-            """, (fuzzy_room_type,))
+            self.cursor.execute("SELECT location FROM room_locations WHERE room_type = %s", (fuzzy_room_type,))
             location_result = self.cursor.fetchone()
-
             if location_result:
                 return f"The {fuzzy_room_type.lower()} is {location_result['location']}"
             else:
                 return f"Sorry, I couldn’t find a location for the {room_type_raw.lower()}."
 
-        # 📚 Subject-based lookup (e.g. “Where is the Digital Systems lecture?”)
         if "academic_subject" in slots:
             subject = slots["academic_subject"].strip().lower().replace("’s", "").replace("'", "")
             fuzzy_subject = self.fuzzy_match(subject, "academic_subject", "timetable") or subject
 
-            self.cursor.execute("""
-                SELECT room_id FROM timetable
-                WHERE academic_subject = %s AND class_type = %s LIMIT 1
-            """, (fuzzy_subject, class_type))
+            self.cursor.execute("SELECT room_id FROM timetable WHERE academic_subject = %s AND class_type = %s LIMIT 1", (fuzzy_subject, class_type))
             result = self.cursor.fetchone()
-
             if result and result["room_id"]:
-                return f"The {class_type} for {fuzzy_subject.title()} is in room {result['room_id']}."
+                return f"The {class_type} for {fuzzy_subject.title()} is in room {result['room_id']}. Let me know if you need help finding it!"
 
-            # Try as a fallback: maybe it's a named room_type instead
-            self.cursor.execute("""
-                SELECT location FROM room_locations
-                WHERE room_type LIKE %s
-            """, (f"%{fuzzy_subject}%",))
+            self.cursor.execute("SELECT location FROM room_locations WHERE room_type LIKE %s", (f"%{fuzzy_subject}%",))
             alt_result = self.cursor.fetchone()
             if alt_result:
-                return f"I couldn’t find a timetable entry, but {fuzzy_subject.title()} may be in {alt_result['location']}."
+                return f"I couldn’t find a timetable entry, but {fuzzy_subject.title()} may be in {alt_result['location']}"
 
             return f"I couldn't find the venue for the {class_type} of {fuzzy_subject.title()}."
 
-        # No recognizable information
-        return "I need more details to find the location."
+        return ("I need more details to find the location. "
+                "Try something like 'Where is the lift?' or 'Where is Digital Systems lab?'")
 
     def handle_timetable_query(self, slots):
         self.ensure_connection()
         subject = slots.get("academic_subject", "").replace("’s", "").replace("'", "").strip()
 
-        # 🔧 Normalize class_type inside timetable_query too
         class_type_map = {
             "lesson?": "lecture", "lesson": "lecture", "lect": "lecture",
             "class": "lecture", "tutorial": "tutorial", "lab": "lab", "prac": "lab", "tut": "tutorial",
@@ -176,11 +166,7 @@ class DBQuery:
             return "Please specify the course name."
 
         subject = self.fuzzy_match(subject, "academic_subject", "timetable") or subject
-        self.cursor.execute("""
-            SELECT day_of_week, start_time, end_time, room_id 
-            FROM timetable 
-            WHERE academic_subject = %s AND class_type = %s
-        """, (subject, class_type))
+        self.cursor.execute("SELECT day_of_week, start_time, end_time, room_id FROM timetable WHERE academic_subject = %s AND class_type = %s", (subject, class_type))
         sessions = self.cursor.fetchall()
 
         if not sessions:
@@ -190,43 +176,27 @@ class DBQuery:
         day_map = {day: i for i, day in enumerate(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'])}
         future_sessions = []
 
-        # inside handle_timetable_query loop:
         for sess in sessions:
             try:
                 day_idx = day_map[sess["day_of_week"]]
                 start_time = normalize_time(sess["start_time"])
-
                 next_class_day = (day_idx - now.weekday() + 7) % 7
-                next_class_datetime = datetime.combine(
-                    now.date() + timedelta(days=next_class_day),
-                    start_time
-                )
-
+                next_class_datetime = datetime.combine(now.date() + timedelta(days=next_class_day), start_time)
                 if next_class_datetime < now:
                     next_class_datetime += timedelta(days=7)
-
-                # Keep times raw in display — no need to parse end_time unless formatting
-                future_sessions.append((
-                    next_class_datetime,
-                    sess["day_of_week"],
-                    str(sess["start_time"]),
-                    str(sess["end_time"]),
-                    sess["room_id"]
-                ))
-
+                future_sessions.append((next_class_datetime, sess["day_of_week"], str(sess["start_time"]), str(sess["end_time"]), sess["room_id"]))
             except Exception as e:
                 print("Session parse error:", e)
                 continue
 
         next_class = sorted(future_sessions, key=lambda x: x[0])[0]
-        return (
-            f"The next {class_type} for {subject.title()} is on {next_class[1]} "
-            f"from {next_class[2]} to {next_class[3]} in room {next_class[4]}."
-        )
+        return (f"The next {class_type} for {subject.title()} is on {next_class[1]} "
+                f"from {next_class[2]} to {next_class[3]} in room {next_class[4]}.")
 
     def close(self):
         self.cursor.close()
         self.conn.close()
+
 
 
 
