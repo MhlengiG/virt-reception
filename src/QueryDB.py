@@ -22,11 +22,20 @@ class DBQuery:
             host=host,
             user=user,
             password=password,
-            database=database
+            database=database,
+            ssl_disabled = True
         )
         self.cursor = self.conn.cursor(dictionary=True)
         self.conn.ping(reconnect=True, attempts=3, delay=2)
         # self.cursor = self.conn.cursor()
+
+    def ensure_connection(self):
+        try:
+            self.conn.ping(reconnect=True, attempts=3, delay=2)
+        except mysql.connector.Error as e:
+            print("DB reconnection triggered:", e)
+            self.conn.reconnect(attempts=3, delay=2)
+            self.cursor = self.conn.cursor(dictionary=True)
 
     def get_current_day(self):
         return datetime.now().strftime("%A")
@@ -65,6 +74,7 @@ class DBQuery:
         return "Sorry, I’m not trained to handle that request."
 
     def handle_staff_availability(self, slots):
+        self.ensure_connection()
         if "surname" not in slots:
             return "Please specify the staff member."
 
@@ -76,6 +86,7 @@ class DBQuery:
         return f"I couldn't find anyone with the surname {surname}."
 
     def handle_location_of(self, slots):
+        self.ensure_connection()
         # Remove hallucinated surnames like "class", "lesson"
         hallucinated_starts = {"cla", "les", "lec", "less", "lect","and","And"}
         if "surname" in slots:
@@ -145,10 +156,11 @@ class DBQuery:
 
             return f"I couldn't find the venue for the {class_type} of {fuzzy_subject.title()}."
 
-        # 🪫 No recognizable information
+        # No recognizable information
         return "I need more details to find the location."
 
     def handle_timetable_query(self, slots):
+        self.ensure_connection()
         subject = slots.get("academic_subject", "").replace("’s", "").replace("'", "").strip()
 
         # 🔧 Normalize class_type inside timetable_query too
